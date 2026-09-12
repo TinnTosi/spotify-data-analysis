@@ -6,6 +6,7 @@ The project explores artist representation, popularity trends, explicit content 
 
 ## Project Structure
 
+```text
 spotify-data-analysis/
 ├── data/
 │   ├── top_10000_1950-now.csv
@@ -19,6 +20,7 @@ spotify-data-analysis/
 ├── src/
 │   └── data_cleaning.py
 └── README.md
+```
 
 ## Tools & Technologies
 
