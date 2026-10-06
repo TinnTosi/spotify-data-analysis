@@ -1,83 +1,49 @@
 # Spotify Data Analysis
 
-Exploratory data analysis of Spotify tracks using Python, SQL, Pandas, MySQL, and Plotly.
+Exploratory data analysis of a Spotify tracks dataset using Python, Pandas, SQL, and Plotly.
 
-The project explores artist representation, popularity trends, explicit content across decades, and the relationship between song duration and popularity.
+## Project Objective
 
-## Project Structure
+The goal of this project is to analyze Spotify track data and identify patterns in artist representation, popularity, explicit content, and song characteristics across different decades.
 
-```text
-spotify-data-analysis/
-├── data/
-│   ├── top_10000_1950-now.csv
-│   ├── spotify_cleaned.csv
-│   └── spotify_analysis.csv
-├── notebooks/
-│   └── spotify_analysis.ipynb
-├── sql/
-│   ├── database_setup.sql
-│   └── spotify_analysis.sql
-├── src/
-│   └── data_cleaning.py
-└── README.md
-```
+## Key Questions
+
+- Which artists appear most frequently in the dataset?
+- How has music representation changed across decades?
+- How has explicit content changed over time?
+- Are explicit tracks more popular than non-explicit tracks?
+- Is track duration related to popularity?
 
 ## Tools & Technologies
 
 - Python
 - Pandas
-- MySQL
-- SQL
+- SQL / MySQL
 - Plotly
 - Jupyter Notebook
 
-## Data Preparation
+## Analysis
 
-The raw Spotify dataset was cleaned and prepared using Pandas. The process included:
-
-- removing duplicate rows
-- removing empty columns
-- standardizing column names
-- converting release dates to datetime format
-- extracting album release year
-- handling missing values in essential analysis fields
-- creating an analysis-ready dataset for SQL and Python
-
-After cleaning, the analysis dataset contains **9,949 tracks**.
-
-## SQL Analysis
-
-MySQL was used to explore six analytical questions:
-
-1. Which artists have the strongest presence in the dataset?
-2. Which songs are the most popular in the dataset?
-3. How has explicit content changed across decades?
-4. How has popularity changed across decades?
-5. Is song duration associated with popularity?
-6. Do explicit and non-explicit songs differ in popularity?
-
-The SQL analysis includes grouping, aggregation, conditional aggregation, sorting, filtering, and data transformation.
-
-## Python Analysis & Visualization
-
-Pandas and Plotly were used to further explore and visualize selected findings from the SQL analysis.
-
-The notebook includes:
-
-- Top 10 artists by number of tracks
-- song duration vs. popularity
-- explicit tracks by decade
-- average popularity by decade
-- correlation analysis between song duration and popularity
+The project includes:
+- Data cleaning and preparation with Pandas
+- SQL queries for exploratory analysis
+- Analysis of artist representation and popularity
+- Analysis of explicit content across decades
+- Comparison of explicit and non-explicit track popularity
+- Analysis of the relationship between song duration and popularity
+- Interactive visualizations with Plotly
 
 ## Key Findings
 
-- Taylor Swift has the strongest presence in the dataset with 50 tracks, followed by P!nk with 47 and Elvis Presley with 46.
-- The share of explicit tracks increases substantially across decades, reaching 13.95% in the 2020s.
-- Average popularity varies considerably across decades. The 2020s show a notable increase compared with the 1990s–2010s, while the high average for the 1950s should be interpreted cautiously because that decade contains only 27 tracks.
-- Song duration shows almost no linear relationship with popularity (r = 0.029).
-- Explicit tracks have a higher average popularity score (39.85) than non-explicit tracks (32.09) in this dataset.
+- Taylor Swift has the highest number of tracks (50), followed by P!nk (47) and Elvis Presley (46).
+- The share of explicit tracks has increased since the 1980s, reaching 13.95% in the 2020s.
+- Average popularity generally declined from the 1970s to the 2000s, followed by a strong increase in the 2020s.
+- Track duration has almost no linear relationship with popularity (r = 0.029).
+- Explicit tracks have a higher average popularity score (39.85) than non-explicit tracks (32.09).
 
-## Dataset
+## Project Structure
 
-The project uses the **Top 10,000 Spotify Songs (1950–Now)** dataset by joebeachcapital, available on Kaggle.
+- `data/` – dataset used for the analysis
+- `notebooks/` – exploratory analysis and visualizations
+- `sql/` – SQL queries used for analysis
+- `src/` – data cleaning scripts
