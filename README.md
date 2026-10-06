@@ -43,7 +43,7 @@ The project includes:
 
 ## Project Structure
 
-- `data/` – dataset used for the analysis
-- `notebooks/` – exploratory analysis and visualizations
-- `sql/` – SQL queries used for analysis
-- `src/` – data cleaning scripts
+- `data/` - dataset used for the analysis
+- `notebooks/` - exploratory analysis and visualizations
+- `sql/` - SQL queries used for analysis
+- `src/` - data cleaning scripts
